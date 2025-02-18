@@ -1,0 +1,121 @@
+[
+  {
+    "id":1,
+    "topic": "HTML",
+    "level": "Beginner",
+    "totalQuestions": 4,
+    "perQuestionScore": 5,
+    "questions": [
+      {
+        "question": "The correct sequence of HTML tags for starting a webpage is -",
+        "choices": [
+          "Head, Title, HTML, body",
+          "HTML, Body, Title, Head",
+          "HTML, Title, Body, Head",
+          "HTML, Head, Title, Body"
+        ],
+        "type": "MCQs",
+        "correctAnswer": "HTML, Head, Title, Body"
+      },
+      {
+        "question": "Which of the following tag is used for inserting the largest heading in HTML?",
+        "choices": ["<h3>", "<h1>", "<h5>", "<h6>"],
+        "type": "MCQs",
+        "correctAnswer": "<h1>"
+      },
+      {
+        "question": " How to insert an image in HTML?",
+        "choices": [
+          "<img href = 'jtp.png' />",
+          "<img url = 'jtp.png' />",
+          "<img link = 'jtp.png' />",
+          "<img src = 'jtp.png' />"
+        ],
+        "type": "MCQs",
+        "correctAnswer": "<img src = 'jtp.png' />"
+      },
+      {
+        "question": " The <hr> tag in HTML is used for -",
+        "choices": [
+          "new line",
+          "vertical ruler",
+          "new paragraph",
+          "horizontal ruler"
+        ],
+        "type": "MCQs",
+        "correctAnswer": "horizontal ruler"
+      }
+    ]
+  },
+  {
+    "id":2,
+    "topic": "CSS",
+    "level": "Beginner",
+    "totalQuestions": 4,
+    "perQuestionScore": 5,
+    "questions": [
+      {
+        "question": "Which of the following CSS selectors are used to specify a group of elements?",
+        "choices": ["tag", "id", "class", "both class and tag"],
+        "type": "MCQs",
+        "correctAnswer": "class"
+      },
+      {
+        "question": "Which of the following CSS framework is used to create a responsive design?",
+        "choices": ["django", "rails", "larawell", "bootstrap"],
+        "type": "MCQs",
+        "correctAnswer": "bootstrap"
+      },
+      {
+        "question": "Which of the following type of HTML tag is used to define an internal style sheet?",
+        "choices": ["<script>", "<link>", "<class>", "<style>"],
+        "type": "MCQs",
+        "correctAnswer": "<style>"
+      },
+      {
+        "question": "Which of the following is not the property of the CSS box model?",
+        "choices": ["margin", "color", "width", "height"],
+        "type": "MCQs",
+        "correctAnswer": "color"
+      }
+    ]
+  },
+  {
+    "id":3,
+    "topic": "Javascript",
+    "level": "Beginner",
+    "totalQuestions": 4,
+    "perQuestionScore": 5,
+    "questions": [
+      {
+        "question": "Which function is used to serialize an object into a JSON string in Javascript?",
+        "choices": ["stringify()", "parse()", "convert()", "None of the above"],
+        "type": "MCQs",
+        "correctAnswer": "stringify()"
+      },
+      {
+        "question": "Which of the following keywords is used to define a variable in Javascript?",
+        "choices": ["var", "let", "var and let", "None of the above"],
+        "type": "MCQs",
+        "correctAnswer": "var and let"
+      },
+      {
+        "question": "Which of the following methods can be used to display data in some form using Javascript?",
+        "choices": [
+          "document.write()",
+          "console.log()",
+          "window.alert",
+          "All of the above"
+        ],
+        "type": "MCQs",
+        "correctAnswer": "All of the above"
+      },
+      {
+        "question": "How can a datatype be declared to be a constant type?",
+        "choices": ["const", "var", "let", "constant"],
+        "type": "MCQs",
+        "correctAnswer": "const"
+      }
+    ]
+  }
+]

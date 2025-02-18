@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: Poppins, Helvetica, Arial, sans-serif;
+}
+
+/* navbar styling */
+img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.containers {
+  padding: 1% 5%;
+  background-color:white;
+  display: flex;
+  flex: row;
+  flex-wrap: nowrap;
+  flex: 0 1 auto;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: fixed;
+  width: 100vw;
+  z-index: 100;
+}
+.logo a {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex: 0 1 auto;
+}
+.navigations{
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+#signIn {
+  text-decoration: none;
+  color: black;
+  border: 1px solid #d5d8db;
+  padding: 5px;
+  width: 100px;
+  height: 35px;
+  border-radius: 10px;
+}
+#signIn:hover {
+  background-color: #0a73eb;
+  color: white;
+}
+#signUp,
+#demoQuiz {
+  text-align: center;
+  width: 100px;
+  height: 35px;
+  border-radius: 10px;
+  background-color: #0a73eb;
+  color: white;
+  padding: 5px;
+}
+.logo h1 {
+  color: #0a73eb;
+}
+#signUp:hover,
+#demoQuiz:hover {
+  background-color: white;
+  color: #0a73eb;
+  border: 1px solid blue;
+}
+.linkTemp:hover {
+  color: #0a73eb;
+  font-weight: 800;
+  font-size: larger;
+  text-shadow: 2px 2px 5px cyan;
+}
+
+/* main content styling */
+.mainContent {
+  padding: 9% 5% 1% 5%;
+  display: flex;
+  flex: 0 1 auto;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.leftSide {
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+}
+.leftSide h1 {
+  font-size: 48px;
+}
+.leftSide p {
+  padding: 8% 1% 5% 1%;
+}
+.rightSide {
+  display: flex;
+  flex: 0 1 auto;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.rightSide img {
+  width: 100%;
+  height: 100%;
+}
+
+/* templates styling */
+.tempCont,
+.mainTesti {
+  text-align: center;
+  padding: 6.5% 5%;
+}
+.mainTemp,
+.starCont,
+.custCont {
+  display: flex;
+  flex: 0 1 auto;
+  justify-content: space-evenly;
+}
+
+.mainTemp div {
+  width: 50%;
+  height: 50%;
+}
+.mainTemp h3{
+  color:yellow;
+  font-weight: 800;
+  -webkit-text-stroke: 1px black;
+}
+.mainTemp img {
+  object-fit: contain;
+  height: 80%;
+  width: 80%;
+}
+.mainTemp div button {
+  background-color: transparent;
+  cursor: pointer;
+}
+.mainTemp div:hover,
+.logo:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+
+.starCont div {
+  width: 25%;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  background-color: #f7f8f6;
+  padding: 30px;
+  border-radius: 30px;
+}
+.starCont div img {
+  width: 70%;
+  height: 70%;
+}
+.starCont div h6 {
+  color: gold;
+  font-size: larger;
+}
+.starCont div p {
+  text-align: left;
+  color: black;
+}
+
+/* quizpage styling */
+.quizPage {
+  padding: 9% 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top, #0a73eb 10%, #f8f7f7 90%);
+  color: #11052c;
+  margin: 0;
+  padding: 0 30px;
+}
+.quiz-container {
+  max-width: 500px;
+  min-width: 250px;
+  background: #ffffff;
+  border-radius: 4px;
+  margin-top: 100px;
+  padding: 30px 60px;
+}
+
+.quiz-container .active-question-no,.quiz-container-Dark .active-question-no {
+  font-size: 32px;
+  font-weight: 500;
+  color: #0a73eb;
+}
+
+.quiz-container .total-question,.quiz-container-Dark .total-question {
+  font-size: 16px;
+  font-weight: 500;
+  color: #e0dee3;
+}
+
+.quiz-container h2 ,.quiz-container-Dark h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.quiz-container ul,.quiz-container-Dark ul {
+  margin-top: 20px;
+  margin-left: -40px;
+}
+
+.quiz-container ul li ,.quiz-container-Dark ul li {
+  text-decoration: none;
+  list-style: none;
+  color: #2d264b;
+  font-size: 16px;
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 16px;
+  padding: 11px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.quiz-container ul .selected-answer,.quiz-container-Dark ul .selected-answer {
+  background: #91bee5;
+  border: 1px solid #0a73eb;
+}
+
+.quiz-container button,.quiz-container-Dark button {
+  background: linear-gradient(90deg, #0a73eb 44%, white 100%);
+  border-radius: 9px;
+  font-size: 18px;
+  color: #ffffff;
+  padding: 10px 42px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.quiz-container button:disabled,.quiz-container-Dark button:disabled {
+  background: #e7e8e9;
+  color: #9fa3a9;
+  cursor: not-allowed;
+}
+
+.flex-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.result h3 {
+  font-size: 24px;
+  letter-spacing: 1.4px;
+  text-align: center;
+}
+
+.result p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.result p span {
+  color: #0a73eb;
+  font-size: 22px;
+}
+
+/* footer styling */
+.fBody {
+  background-color: #0a73eb;
+  color: white;
+}
+.footer {
+  display: flex;
+  flex: 0 1 auto;
+  padding: 1% 5%;
+  align-items: center;
+  justify-content: space-between;
+}
+.companyText ul li {
+  padding: 5px;
+  list-style: none;
+}
+.icons a {
+  padding: 0 20px;
+}
+#icons {
+  width: 30px;
+  height: 30px;
+  background-color: #0a73eb;
+}
+#icons:hover {
+  background-color: rgb(131, 151, 250);
+  border-radius: 10px;
+}
+
+/* Dark Mode Styling */
+.Content-Dark{
+  background-color: #000;
+  color:white;
+}
+.Content-Light{
+  background-color: white;
+  color:#000;
+}
+.quizPage-Dark{
+  padding: 9% 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color:white;
+  margin: 0;
+  padding: 0 30px;
+}
+.quiz-container-Dark {
+  max-width: 500px;
+  min-width: 250px;
+  background:rgb(31, 31, 31);
+  color:white;
+  border-radius: 4px;
+  margin-top: 100px;
+  padding: 30px 60px;
+}
+
+/* Plans Page Styling */
+.card{
+  width:25%;
+}
+.membershipPage{
+  text-align: center;
+  padding: 9% 5%;
+  /* background-image:linear-gradient(black,white); */
+}
+
+.priceCard{
+  text-align: center;
+  display:flex;
+  flex-direction: row;
+  flex:0 1 auto;
+  gap:20px;
+  justify-content:center
+}
+.card-header,.card-title, .card-footer{
+  font-weight: 600;
+  padding: 3px;;
+}
